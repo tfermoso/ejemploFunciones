@@ -11,6 +11,26 @@
   */
   function sumaArray(numeros){
     let suma=0;
-
+    for(let valor of numeros){
+      suma=suma+valor;
+    }
     return suma;
   }
+  function sumaArray2(numeros){
+    let suma=0;
+    for(let pos in numeros){
+      suma=suma+numeros[pos];
+    }
+    return suma;
+  }
+  function sumaArray3(numeros){
+    let suma=0;
+    for(let i=0;i<numeros.lenght;i++){
+      suma=suma+numeros[i];
+    }
+    return suma;
+  }
+
+
+  let sumaValor=sumaArray3([2,3,4,5]);
+  console.log(sumaValor);
